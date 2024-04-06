@@ -1,4 +1,4 @@
-let firstNumberInput = prompt();
+/*let firstNumberInput = prompt();
 let secondNumberInput = prompt();
 let operatorInput = prompt();
 
@@ -20,5 +20,8 @@ function divide(a, b) {
 }
 
 function operate(a, b, operator) {
-    
+    add(a, b);
+    subtract(a, b);
+    multiply(a, b);
+    divide(a, b);
 }
