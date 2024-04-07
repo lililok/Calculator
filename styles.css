@@ -9,12 +9,13 @@ body {
     align-items: center;
 }
 .calculator {
-    background-color: rgb(164, 116, 168);
+    background-color: rgb(167, 117, 172);
     height: 750px;
     width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     border-radius: 10px;
 }
 
@@ -22,5 +23,29 @@ body {
     background-color: black;
     width: 325px;
     height: 100px;
-    margin-top: 50px;
+    margin-top: 30px;
+    color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    
+    border: 15px solid rgb(79, 50, 82);
+}
+
+.number, .operator {
+    background-color: rgb(117, 75, 121);
+    width: 100px;
+    height: 100px;
+    border: 0;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
 }
