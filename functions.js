@@ -1,7 +1,15 @@
-/*let firstNumberInput = prompt();
-let secondNumberInput = prompt();
-let operatorInput = prompt();
+const buttons = document.querySelectorAll("button");
+const display = document.querySelector('.display');
+let displayValue = 0;
+display.innerHTML = displayValue;
 
+displayValue = ''
+buttons.forEach(button => {
+    button.addEventListener("click", () => {
+        displayValue += button.id;
+        display.innerHTML = displayValue;
+    });
+});
 
 function add(a, b) {
     

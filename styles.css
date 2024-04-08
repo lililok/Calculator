@@ -28,8 +28,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: right;
-    
+    padding-right: 30px;
     border: 15px solid rgb(79, 50, 82);
+    font-size: large;
 }
 
 .number, .operator {
@@ -39,6 +40,11 @@ body {
     border: 0;
     border-radius: 10px;
     margin: 5px;
+    font-size: large;
+}
+
+.operator {
+    background-color: rgb(77, 44, 80);
 }
 
 .buttons {
