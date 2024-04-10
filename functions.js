@@ -1,37 +1,23 @@
 const buttons = document.querySelectorAll("button");
 const display = document.querySelector('.display');
-let displayValue = 0;
-let operator = '';
-let firstValue = '';
-let secondValue = '';
-let result = 0;
+let displayValue = '0';
+let operator = null;
+let firstValue = null;
+let secondValue = null;
 let secondValueStarted = false;
-display.innerHTML = displayValue;
+display.innerHTML = 0;
 
-displayValue = ''
-buttons.forEach(button => {
-    button.addEventListener("click", () => {
-        if (button.id === "equal") {
-            let result = operate(firstValue, secondValue, operator);
-            displayValue = result;
-            display.innerHTML = displayValue;
-        }
-        if (button.classList.contains("operator")) {
-            operator = button.textContent;
-            secondValueStarted = true;
-        } else {
-            if (secondValueStarted === false) {
-                firstValue += button.id;
-                displayValue = firstValue;
-                display.innerHTML = displayValue;
-            } else {
-                secondValue += button.id;
-                displayValue = secondValue;
-                display.innerHTML = displayValue;
-            }
-        }
-    });
-});
+function numberClick(number) {
+    
+}
+
+function operatorClick(operator) {
+    
+}
+
+function clear() {
+    
+}
 
 function add(a, b) {
     return a+b;
