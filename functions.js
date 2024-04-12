@@ -17,14 +17,8 @@ function numberClick(number) {
 }
 
 function operatorClick(op) {
-    if (beginSecondValue === true) {
-        secondValue = '';
-    }
     beginSecondValue = true;
     operator = op;
-    if (secondValue !== '') {
-        return;
-    }
 }
 
 function clearing() {
